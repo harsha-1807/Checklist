@@ -9,7 +9,6 @@ export async function GET() {
       },
     });
     return NextResponse.json(activities, { status: 200 });
-    // return NextResponse.json("working good",{ status: 200 });
   } catch (error) {
     console.error("GET error:", error);
     return NextResponse.json(
